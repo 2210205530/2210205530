@@ -1,0 +1,266 @@
+:root {
+  --primary: #2c3e50;
+  --secondary: #34495e;
+  --accent: #2980b9;
+  --light: #ecf0f1;
+  --dark: #333;
+  --gray: #95a5a6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background-color: #f5f7fa;
+  padding: 20px;
+}
+.resume-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+header {
+  background: var(--primary);
+  color: white;
+  padding: 0;
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 40px;
+  text-align: left;
+}
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.name-title {
+  flex: 1;
+}
+.contact-bar {
+  background: var(--secondary);
+  padding: 10px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.sidebar {
+  background: var(--light);
+  padding: 30px;
+}
+.main-content {
+  padding: 30px;
+}
+h2 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent);
+}
+h3 {
+  color: var(--secondary);
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+ul {
+  list-style-position: inside;
+  margin-bottom: 20px;
+}
+li {
+  margin-bottom: 8px;
+}
+.date {
+  color: var(--gray);
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.job, .degree {
+  margin-bottom: 25px;
+}
+.contact-info ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.contact-info ul li::before {
+  content: "•";
+  color: var(--accent);
+  margin-right: 8px;
+}
+@media (max-width: 768px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+  }
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+  header {
+    padding: 20px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill span {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  border-radius: 20px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background-color: var(--accent);
+  border-radius: 20px;
+  transition: width 1.5s ease-in-out;
+}
+/* Add these to your existing CSS file */
+
+/* Percentage display for progress bars */
+.percentage {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0.9rem;
+  color: var(--secondary);
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all 0.3s ease 0.5s;
+}
+
+.progress-bar:hover .percentage {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Chart view styles */
+.skills.chart-view .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.skills.chart-view .progress-bar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+  background: conic-gradient(var(--accent) 0%, #ddd 0%);
+  transform: rotate(-90deg);
+  margin: 10px auto;
+}
+
+.skills.chart-view .progress {
+  display: none;
+}
+
+.skills.chart-view .progress-bar::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skills.chart-view .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  z-index: 2;
+  font-weight: bold;
+  font-size: 1.2rem;
+  opacity: 1 !important;
+}
+
+/* Chart toggle button */
+.chart-toggle {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.chart-toggle:hover {
+  background: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* Timeline animation base */
+.job, .degree {
+  opacity: 0;
+}
+
+/* Profile image transition */
+.profile-img {
+  transition: all 0.3s ease;
+}
+
+/* Contact info hover */
+.contact-info li {
+  transition: transform 0.2s ease;
+  cursor: default;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: floatUp infinite ease-in;
+  z-index: 0;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-120vh) scale(0.5);
+  }
+}
