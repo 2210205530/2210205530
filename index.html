@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meseud Hadis Redi — Computer Engineering</title>
+
+  <!-- google fonts — DM Serif for headings, DM Sans for body -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- my own stylesheet -->
+  <link rel="stylesheet" href="2210205530.css">
+</head>
+<body>
+
+  <!-- these two divs are just decorative background elements, no real content -->
+  <div class="bg-grid"></div>
+  <div class="accent-blob"></div>
+
+  <div class="wrapper">
+
+    <!-- HEADER SECTION -->
+    <header class="hero">
+
+      <div class="hero-left">
+        <div class="tag fade-up delay-0">Computer Engineering · Karabük University · 2025</div>
+        <h1 class="name fade-up delay-1">Meseud<br>Hadis Redi</h1>
+        <p class="tagline fade-up delay-2">Building solid software with a passion for clean code and creative problem solving.</p>
+
+        <!-- contact info row -->
+        <div class="contact-row fade-up delay-3">
+          <a href="mailto:2210205530@ogrenci.karabuk.edu.tr" class="contact-chip">
+            <span class="chip-dot"></span>
+            2210205530@ogrenci.karabuk.edu.tr
+          </a>
+          <span class="contact-chip">
+            <span class="chip-dot"></span>
+            Karabük, Turkey
+          </span>
+          <span class="contact-chip">
+            <span class="chip-dot"></span>
+            ID: 2210205530
+          </span>
+        </div>
+      </div>
+
+      <!-- right side: photo with spinning ring -->
+      <div class="hero-right fade-up delay-2">
+        <div class="photo-frame">
+          <!--
+            object-position: center 15%  <-- this is what fixes the face crop.
+            it pulls the image up inside the circle so my face is fully visible
+            instead of being cut off at the top.
+          -->
+          <img
+            src="2210205530.jpg"
+            alt="Meseud Hadis Redi"
+            class="profile-photo"
+            id="profilePhoto"
+          >
+          <!-- the spinning dashed ring -->
+          <div class="photo-ring"></div>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- thin divider line -->
+    <div class="section-divider fade-up delay-3"></div>
+
+    <div class="main-grid">
+
+      <aside class="left-col">
+
+        <!-- SKILLS panel -->
+        <section class="card fade-up delay-4">
+          <h2 class="section-title">Skills</h2>
+          <div class="skill-list">
+
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>C++</span>
+                <span class="skill-pct" data-val="85">0%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-target="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Database Management</span>
+                <span class="skill-pct" data-val="72">0%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-target="72"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Problem Solving</span>
+                <span class="skill-pct" data-val="80">0%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-target="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Team Collaboration</span>
+                <span class="skill-pct" data-val="75">0%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-target="75"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Git &amp; Version Control</span>
+                <span class="skill-pct" data-val="70">0%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-target="70"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>HTML / CSS</span>
+                <span class="skill-pct" data-val="82">0%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" data-target="82"></div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- LANGUAGES panel -->
+        <section class="card fade-up delay-5">
+          <h2 class="section-title">Languages</h2>
+          <div class="lang-list">
+
+            <div class="lang-row">
+              <span>Amharic</span>
+              <span class="badge badge-green">Native</span>
+            </div>
+
+            <div class="lang-row">
+              <span>English</span>
+              <span class="badge badge-blue">Fluent</span>
+            </div>
+
+            <!-- added Arabic as requested -->
+            <div class="lang-row">
+              <span>Arabic</span>
+              <span class="badge badge-blue">Fluent</span>
+            </div>
+
+            <div class="lang-row">
+              <span>Turkish</span>
+              <span class="badge badge-amber">Intermediate</span>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- INTERESTS panel -->
+        <section class="card fade-up delay-5">
+          <h2 class="section-title">Interests</h2>
+          <div class="tag-cloud">
+            <span class="pill">Algorithm Design</span>
+            <span class="pill">Open Source</span>
+            <span class="pill">Machine Learning</span>
+            <span class="pill">Web Dev</span>
+            <span class="pill">Computer Architecture</span>
+            <span class="pill">Server-Side Programming</span>
+            <span class="pill">Mobile App Development</span>
+            <span class="pill">UI Design</span>
+          </div>
+        </section>
+
+        <!-- SOCIALS SECTION -->
+        <section class="card fade-up delay-6">
+          <h2 class="section-title">Socials</h2>
+          <div class="socials-list">
+
+            <!-- instagram link -->
+            <a href="https://www.instagram.com/msd.xj" target="_blank" class="social-link" id="igLink">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="6" ry="6" stroke="currentColor" stroke-width="2"></rect>
+                <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="2"></circle>
+                <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"></circle>
+              </svg>
+              <span>Instagram — msd.xj</span>
+            </a>
+
+            <!-- github link -->
+            <a href="https://github.com/2210205530" target="_blank" class="social-link" id="ghLink">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49
+                         0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5
+                         -.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85
+                         .09-.66.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75
+                         -.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84
+                         c.85 0 1.7.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71
+                         .64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9
+                         0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.27 10.27 0 0 0 22 12.26
+                         C22 6.58 17.52 2 12 2Z"
+                      fill="currentColor">
+                </path>
+              </svg>
+              <span>GitHub — 2210205530</span>
+            </a>
+
+          </div>
+        </section>
+
+      </aside>
+
+      <!-- RIGHT MAIN COLUMN -->
+      <main class="right-col">
+
+        <!-- ABOUT ME -->
+        <section class="card fade-up delay-4">
+          <h2 class="section-title">About Me</h2>
+          <p class="body-text">
+            I am a Computer Engineering student at Karabük University with a genuine passion
+            for software development, hardware design and problem solving. I enjoy building
+            things from scratch and understanding how they work at a deep level. Whether it
+            is writing clean code, designing a circuit or putting together a game, I like
+            taking on challenges that push me to grow as an engineer.
+          </p>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="card fade-up delay-5">
+          <h2 class="section-title">Education</h2>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <div class="tl-header">
+                <span class="tl-role">Bachelor's — Computer Engineering</span>
+                <span class="tl-date" id="edu-date">2022 – Present</span>
+              </div>
+              <span class="tl-org">Karabük University</span>
+              <ul class="tl-points">
+                <li>Courses: Data Structures, Algorithms, Operating Systems, Computer Networks</li>
+                <li>Programming languages studied: C, C++, Assembly, Python</li>
+                <li>Active participant in coding workshops and university hackathons</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="card fade-up delay-5">
+          <h2 class="section-title">Experience</h2>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <div class="tl-header">
+                <span class="tl-role">Software Development Intern</span>
+                <span class="tl-date" id="exp-date">June 2023 – Present · <span class="duration"></span></span>
+              </div>
+              <span class="tl-org">Tech Solutions</span>
+              <ul class="tl-points">
+                <li>Assisted in software testing and debugging across multiple modules</li>
+                <li>Developed small utility scripts in Python to automate repetitive tasks</li>
+                <li>Collaborated with a team of engineers in agile sprint cycles</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="card fade-up delay-6">
+          <h2 class="section-title">Projects</h2>
+          <div class="project-grid">
+
+            <div class="project-card">
+              <div class="project-icon">💻</div>
+              <div>
+                <p class="project-name">Personal Resume Website</p>
+                <p class="project-tech">HTML · CSS · JavaScript</p>
+                <p class="project-desc">Responsive personal portfolio built from scratch and deployed live via GitHub Pages.</p>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-icon">🔧</div>
+              <div>
+                <p class="project-name">C++ Data Structures Lab</p>
+                <p class="project-tech">C++ · Algorithms</p>
+                <p class="project-desc">Implemented linked lists, binary trees and sorting algorithms from scratch for university coursework.</p>
+              </div>
+            </div>
+
+            <!-- PCB and circuit design -->
+            <div class="project-card">
+              <div class="project-icon">⚡</div>
+              <div>
+                <p class="project-name">PCB &amp; Circuit Design</p>
+                <p class="project-tech">EasyEDA · KiCad · Electronics</p>
+                <p class="project-desc">Designed and simulated printed circuit boards for small electronics projects, including a basic power supply unit.</p>
+              </div>
+            </div>
+
+            <!-- game programming -->
+            <div class="project-card">
+              <div class="project-icon">🎮</div>
+              <div>
+                <p class="project-name">2D Game — C++ / SDL2</p>
+                <p class="project-tech">C++ · SDL2 · Game Logic</p>
+                <p class="project-desc">Built a small 2D game using C++ and SDL2, covering sprite rendering, collision detection and basic game states.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+    <!-- footer -->
+    <footer class="site-footer fade-up delay-6">
+      <span>Meseud Hadis Redi · 2210205530 · Karabük University</span>
+      <span id="footer-year"></span>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
